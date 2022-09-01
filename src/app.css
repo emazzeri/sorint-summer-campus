@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+.ssc-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #e8712d;
+  color: white;
+  padding: 20px 50px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.app-footer {
+  background-color: rgb(32, 32, 32);
+  padding: 20px 50px;
+  color: white;
+}
+
+.ssc-main {
+  flex-grow: 1;
+  padding: 50px 50px;
+}
+
+.user-data {
+  background-color: rgb(221, 221, 221);
+  padding: 25px;
+}
+
+.ssc-list {
+  margin-bottom: 50px;
+}
+
+.ssc-form {
+  background-color: lightgoldenrodyellow;
+  padding: 25px;
+}
+
+.ssc-input {
+  display: flex;
+  margin: 10px 0;
+}
+
+.ssc-input label{
+  width: 100px;
+}
+
+.rubrica {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px
+}
