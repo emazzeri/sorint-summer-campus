@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Content from './component/Content';
-import './app.css'
+import './app.scss'
 
 const App = () => (
   <div className='ssc-app'>

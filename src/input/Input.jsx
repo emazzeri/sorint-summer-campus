@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({ label, name, value, onChange }) => {
+const Input = ({ label, name, value, onChange, required }) => {
   return (
     <div className='ssc-input'>
       <label htmlFor={name}>{label}</label>

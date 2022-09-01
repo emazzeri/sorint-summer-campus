@@ -1,5 +1,9 @@
-body {
+/* body {
   margin: 0;
+}
+
+* {
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .ssc-app {
@@ -42,13 +46,46 @@ body {
   padding: 25px;
 }
 
+.ssc-form h2{
+  text-align: center;
+}
+
+.ssc-form form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ssc-form button {
+  margin-top: 15px;
+  align-items: center;
+  background-color: #fa6400;
+  border-radius: .25rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+}
+
+.ssc-form button:hover {
+  background-color: #b9510b;
+}
+
 .ssc-input {
   display: flex;
+  justify-content: center;
+  width: 33%;
   margin: 10px 0;
 }
 
 .ssc-input label{
-  width: 100px;
+  width: 75px;
 }
 
 .rubrica {
@@ -56,3 +93,41 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 25px
 }
+
+
+table {
+	width:100%;
+	border-left:1px solid grey;
+  border-spacing: 0;
+}
+
+table tr:first-child {
+  background:grey;
+}
+
+th {
+	display:flex;
+  padding: 12px 20px;
+	width:100%;
+  color: white;
+}
+
+tr {
+	display:flex;
+	width:100%;
+}
+
+tr:nth-of-type(odd) {
+	background:lightgray;
+}
+
+td {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+td{
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+} */

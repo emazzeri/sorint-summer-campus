@@ -45,15 +45,39 @@ const Content = () => {
       
       <section className="ssc-list">
         <div className="main">
-          <div className="rubrica">
+          <table>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th>Notes</th>
+              </tr>
+              {users?.map((val, key) => {
+                return (
+                  <tr key={key}>
+                    <td>{val.Name}</td>
+                    <td>{val.Address}</td>
+                    <td>{val.Email}</td>
+                    <td>{val.Phone}</td>
+                    <td>{val.Website}</td>
+                    <td>{val.Notes}</td>
+                  </tr>
+                )
+              })}
+            </table>
+
+          {/* <div className="rubrica">
             {users?.map((user) => (
               <Item key={`user-${user.ID}`} data={user} />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
       <section className="ssc-form">
+        <h2>Add contact</h2>
         <form onSubmit={addUser}>
           <Input
             label="Name"

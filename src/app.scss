@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.ssc-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #e8712d;
+  color: white;
+  padding: 20px 50px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.app-footer {
+  background-color: rgb(32, 32, 32);
+  padding: 20px 50px;
+  color: white;
+}
+
+.ssc-main {
+  flex-grow: 1;
+  padding: 50px 50px;
+}
+
+.user-data {
+  background-color: rgb(221, 221, 221);
+  padding: 25px;
+}
+
+.ssc-list {
+  margin-bottom: 50px;
+}
+
+.ssc-form {
+  background-color: lightgoldenrodyellow;
+  padding: 25px;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 15px;
+    align-items: center;
+    background-color: #fa6400;
+    border-radius: 0.25rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+
+    &:hover {
+      background-color: #b9510b;
+    }
+  }
+}
+
+.ssc-input {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+  margin: 10px 0;
+
+  label {
+    width: 75px;
+  }
+
+  .rubrica {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+  }
+}
+
+table {
+  width: 100%;
+  border-left: 1px solid grey;
+  border-spacing: 0;
+
+  tr {
+    display: flex;
+    width: 100%;
+
+    &:nth-of-type(odd) {
+      background: lightgray;
+    }
+
+    &:first-child {
+      background: grey;
+    }
+
+    th {
+      display: flex;
+      padding: 12px 20px;
+      width: 100%;
+      color: white;
+    }
+
+    td {
+      border-bottom: 1px solid gray;
+      border-right: 1px solid gray;
+      padding: 10px;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
